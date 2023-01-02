@@ -4,11 +4,20 @@
 
 
 
+# Results
+
+The trained LeNet-5 model reach a **98.46%** accuracy on MNIST test dataset on my computer. 
+
+When I used the trained model to recognize my own handwritten numbers, the accuracy could not reach 98%. I'm trying to figure out the underlying mechanism of this. If your have any idea, welcome to discuss with me.
+
+
+
 # Requirements
 
 ```
 torch==1.13.1
 torchvision==0.14.1
+opencv==4.6.0
 ```
 
 
@@ -35,13 +44,13 @@ cd LeNet-5
 pip install -r requirement.txt
 ```
 
-train the model
+train the model on MNIST-train-dataset
 
 ```
 python main.py --mode train
 ```
 
-test the model
+test the model MNIST-test-dataset
 
 ```
 python main.py --mode test
@@ -49,7 +58,11 @@ python main.py --mode test
 
 
 
-# Results
+# Test your own handwriting numbers
 
-The trained LeNet-5 model reach a **98.46%** accuracy on test dataset on my computer. The results may vary slightly on different machines.
+Put your own handwriting number pictures in the folder **./data/test_pic/hand_write/**, and now you can test your own handwriting numbers using the model trained on MNIST-train-dataset
+
+```
+python main.py --mode test --test_mode custom
+```
 

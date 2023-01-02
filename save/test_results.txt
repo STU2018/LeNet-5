@@ -26,5 +26,3 @@ PIC 24 : predict = 3
 PIC 25 : predict = 3 
 PIC 26 : predict = 5 
 PIC 27 : predict = 8 
-PIC 28 : predict = 8 
-PIC 29 : predict = 8 
