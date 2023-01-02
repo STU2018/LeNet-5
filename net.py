@@ -7,7 +7,7 @@ class LeNet5(nn.Module):
 
         self.Sigmoid = nn.Sigmoid()
         self.c1 = nn.Conv2d(in_channels=1, out_channels=6, kernel_size=5,
-                            padding=0)  # mnist picture is 28*28 so padding=2
+                            padding=0)
         self.s2 = nn.AvgPool2d(kernel_size=2, stride=2)
         self.c3 = nn.Conv2d(in_channels=6, out_channels=16, kernel_size=5)
         self.s4 = nn.AvgPool2d(kernel_size=2, stride=2)
