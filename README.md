@@ -6,7 +6,7 @@
 
 # Results
 
-The trained LeNet-5 model reach a **98.46%** accuracy on MNIST test dataset on my computer. 
+The trained LeNet-5 model reach a **98.69%** accuracy on MNIST test dataset on my computer. 
 
 When I used the trained model to recognize my own handwritten numbers, the accuracy could not reach 98%. I'm trying to figure out the underlying mechanism of this. If your have any idea, welcome to discuss with me.
 
