@@ -14,7 +14,7 @@ class LeNet5(nn.Module):
             nn.Conv2d(in_channels=16, out_channels=120, kernel_size=5),
             nn.Flatten(),
             nn.Linear(in_features=120, out_features=84),
-            nn.Linear(in_features=84, out_features=10)
+            nn.Linear(in_features=84, out_features=10),
         )
 
     def forward(self, img):

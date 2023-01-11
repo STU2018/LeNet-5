@@ -20,9 +20,9 @@ torchvision==0.14.1
 opencv==4.6.0
 ```
 
+[2023-01-11] **Note**：opencv is used to resize input images. Now I find this redundant, because we can use _torchvision.transforms.Resize()_ and some other methods in _torchvision.transforms_ to preprocess images more flexibly.
 
-
-# How to run
+# Usage
 
 clone this repository
 
